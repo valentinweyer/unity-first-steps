@@ -136,6 +136,8 @@ public class Player : Saveable
         if (Time.timeScale == 0f)
             return; //wenn pausiert, dann Update abbrechen.
         float h = Input.GetAxis("Horizontal"); //Eingabesignal fürs Laufen
+        var keyLeft = Input.GetKey("left");
+        var keyA = Input.GetKey("a");
         anim.SetFloat("forward", Mathf.Abs(h));
 
         // Vorwärts bewegen:

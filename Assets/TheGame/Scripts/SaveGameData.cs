@@ -76,6 +76,12 @@ public class SaveGameData
     /// </summary>
     public string recentScene = "Szene1";
 
+    /// <summary>
+    /// Inventar mit den mitgeführten Gegenständen.
+    /// </summary>
+    /// <returns></returns>
+    public Inventory inventory = new Inventory();
+
 
     /// <summary>
     /// Methoden, die sich in ein Save-Event eintragen wollen, müssen
